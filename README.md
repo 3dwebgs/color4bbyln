@@ -4,7 +4,7 @@ Description
 ===========
 Cloned from: [http://www.daviddurman.com/flexi-color-picker](http://www.daviddurman.com/flexi-color-picker)
 
-I customozed this color picker to give me fields that convert rgb 0 to 255 values to rgb 0 - 1.0 values for use on Babylon.js color3 class. Nothing else is changed, so all credit goes to daviddurman.com
+I customized this color picker to add fields rgb 0 - 1.0 values for use on Babylon.js color3 class. Nothing else is changed, so all other credit goes to daviddurman.com/flexi-color-picker.
 
 
 
