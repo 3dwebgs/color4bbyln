@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
   <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <link rel="stylesheet" type="text/css" href="../themes.css" />
+  <link rel="stylesheet" type="text/css" href="showcase.css" />
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
   <script type="text/javascript" src="javascripts/colorpicker.js"></script>
@@ -16,31 +18,6 @@
   <meta name="description" content="Cloned from DavidDurman/FlexiColorPicker, but with added fields for Babylon.Color3 values">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
-<style type="text/css">
-
-            #picker-wrapper {
-                width: 200px;
-                height: 200px;
-                position: relative;
-            }
-            #slider-wrapper {
-                width: 30px;
-                height: 200px;
-                position: relative;
-            }
-            #picker-indicator {
-                width: 3px;
-                height: 3px;
-                position: absolute;
-                border: 1px solid white;
-            }
-            #slider-indicator {
-                width: 100%;
-                height: 10px;
-                position: absolute;
-                border: 1px solid black;
-            }
-        </style>
 
 </head>
 
@@ -62,39 +39,42 @@
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
+          <div id="container">
+
+            <div id="default" class="cp cp-default"></div>
+            <div id="fancy" class="cp cp-fancy"></div>
+            <div id="small" class="cp cp-small"></div>
+
+            <div class="io">
+
+                <label>HEX</label>
+                <input id="hex" type="text" value="" />
+
+                <span id="rgb_css"></span>
+                <label>R:</label>
+                <input id="rgb_r" type="number" value="" />
+                <label>G:</label>
+                <input id="rgb_g" type="number" value="" />
+                <label>B:</label>
+                <input id="rgb_b" type="number" value="" />
+
+                <span id="hsv_css"></span>
+                <label>H:</label>
+                <input id="hsv_h" type="text" value="" />
+                <label>S:</label>
+                <input id="hsv_s" type="text" value="" />
+                <label>V:</label>
+                <input id="hsv_v" type="text" value="" />
+            </div>
+
+            <div id="color"></div>
+            <p id="text-color">Lorem ipsum dolor sit amet.</p>
+
+        </div>
+
+        <script src="showcase.js"></script>
           
-<div id="picker-wrapper">
-              <div id="picker"></div>
-              <div id="picker-indicator"></div>
-          </div>
-          <div id="slider-wrapper">
-              <div id="slider"></div>
-              <div id="slider-indicator"></div>
-          </div>
-
-          <script type="text/javascript">
-
-            ColorPicker.fixIndicators(
-                    document.getElementById('slider-indicator'),
-                    document.getElementById('picker-indicator'));
-
-            ColorPicker(
-                    document.getElementById('slider'), 
-                    document.getElementById('picker'), 
-
-                    function(hex, hsv, rgb, pickerCoordinate, sliderCoordinate) {
-
-                        ColorPicker.positionIndicators(
-                            document.getElementById('slider-indicator'),
-                            document.getElementById('picker-indicator'),
-                            sliderCoordinate, pickerCoordinate
-                        );
-
-                        document.body.style.backgroundColor = hex;
-                });
-
-          </script>
-          <div>rgb test div</div>
+          
         </article>
       </div>
     </div>
