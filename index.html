@@ -37,17 +37,25 @@
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
-          <div id="color-picker" class="cp-default"></div>
+          
+          <div id="picker"></div>
+          <div id="slider"></div>
 
           <script type="text/javascript">
+
             ColorPicker(
-              document.getElementById('color-picker'),
+
+              document.getElementById('slider'),
+              document.getElementById('picker'),
+
               function(hex, hsv, rgb) {
-                  console.log(hsv.h, hsv.s, hsv.v);         // [0-359], [0-1], [0-1]
-                  console.log(rgb.r, rgb.g, rgb.b);         // [0-255], [0-255], [0-255]
-                  document.body.style.backgroundColor = hex;        // #HEX
-            });
+                console.log(hsv.h, hsv.s, hsv.v);         // [0-359], [0-1], [0-1]
+                console.log(rgb.r, rgb.g, rgb.b);         // [0-255], [0-255], [0-255]
+                document.body.style.backgroundColor = hex;        // #HEX
+              });
+
           </script>
+          
         </article>
       </div>
     </div>
