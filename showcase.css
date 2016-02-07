@@ -10,16 +10,14 @@ header {
    width: 840px;
    color: lightgray;
    letter-spacing: 2px;
+   font-family: Arial;
+   text-align: center;
 }
 
 h1 span {
    color: white;
 }
    
-.title {   
-   font-family: Arial;
-   text-align: center;
-}
 
 #container {
    width: 800px;
