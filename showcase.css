@@ -4,12 +4,13 @@ body {
    color: black;
 }
 
-h1 {
+h1,h2 {
    font-size: 22px;
    margin: 30px auto;
    width: 840px;
    color: lightgray;
    letter-spacing: 2px;
+   font-family: Arial;
 }
 
 h1 span {
