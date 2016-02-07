@@ -2,8 +2,8 @@
 // -----------------------------------
 
 var cpDefault = ColorPicker(document.getElementById('default'), updateInputs);
-var cpSmall = ColorPicker(document.getElementById('small'), updateInputs);
-var cpFancy = ColorPicker(document.getElementById('fancy'), updateInputs);
+/*var cpSmall = ColorPicker(document.getElementById('small'), updateInputs);
+var cpFancy = ColorPicker(document.getElementById('fancy'), updateInputs);*/
 
 // Inputs.
 // -------
@@ -47,8 +47,8 @@ function updateInputs(hex) {
 function updateColorPickers(hex) {
     
     cpDefault.setHex(hex);
-    cpSmall.setHex(hex);
-    cpFancy.setHex(hex);
+    /*cpSmall.setHex(hex);
+    cpFancy.setHex(hex);*/
 }
 
 
