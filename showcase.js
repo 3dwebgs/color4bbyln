@@ -33,8 +33,7 @@ var textColor = document.getElementById('text-color');
 
 function divideBy255 (value) {  //added
     var newValue = value / 255;
-    newValue = newValue.toFixed(3);
-    return newValue;
+    return newValue.toFixed(3);
 } 
 
 function updateInputs(hex) {
