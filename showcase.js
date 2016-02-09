@@ -52,9 +52,9 @@ function updateInputs(hex) {
     iS.value = hsv.s.toFixed(2);
     iV.value = hsv.v.toFixed(2);
     
-    bR = 0.5;   //added
-    bG = divideBy255(rgb.g);   //added
-    bB = divideBy255(rgb.b);   //added
+    bR.value = 0.5;   //added
+    bG.value = divideBy255(rgb.g);   //added
+    bB.value = divideBy255(rgb.b);   //added
 
     rgbCSS.innerHTML = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
     hsvCSS.innerHTML = 'hsv(' + hsv.h.toFixed(2) + ', ' + hsv.s.toFixed(2) + ', ' + hsv.v.toFixed(2) + ')';
@@ -72,9 +72,7 @@ function updateColorPickers(hex) {
 
 var initialHex = '#f4329c';
 
-
 updateColorPickers(initialHex);
-
 
 iHex.onchange = function() { updateColorPickers(iHex.value); };
 
