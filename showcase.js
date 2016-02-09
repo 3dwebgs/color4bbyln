@@ -11,6 +11,7 @@ var cpFancy = ColorPicker(document.getElementById('fancy'), updateInputs);*/
 //i want rgb #s converted to 0-1 - function rgb2bbyln
 //i need 0-1 numbers converted back to 0-255, 
 //update iR,G,B - when where?
+//make it work
 
 
 
@@ -33,7 +34,7 @@ var textColor = document.getElementById('text-color');
 
 function divideBy255 (value) {
     var newValue = value / 255;
-    return newvalue;
+    return newValue;
 } 
 
 function updateInputs(hex) {
