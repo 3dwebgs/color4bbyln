@@ -25,8 +25,8 @@ var bR = document.getElementById('bbyln_r') //added
 var bG = document.getElementById('bbyln_g') //added
 var bB = document.getElementById('bbyln_b') //added
 
-//var rgbCSS = document.getElementById('rgb_css');
-//var hsvCSS = document.getElementById('hsv_css');
+var rgbCSS = document.getElementById('rgb_css');
+var hsvCSS = document.getElementById('hsv_css');
 
 var color = document.getElementById('color');
 var textColor = document.getElementById('text-color');
