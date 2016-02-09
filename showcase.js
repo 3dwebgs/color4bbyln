@@ -9,10 +9,9 @@ var cpFancy = ColorPicker(document.getElementById('fancy'), updateInputs);*/
 // -------
 
 //i want rgb #s converted to 0-1 - function rgb2bbyln
-//functions or methods? primary question is where do i put these
-//i need 0-1 numbers converted back to 0-255, -function bbyln2rgb
-//then checked against iR,iG,iB - if statement boolean expression
-//then iR/g/b updated if different - if statement block
+//i need 0-1 numbers converted back to 0-255, 
+//update iR,G,B - when where?
+
 
 
 var iHex = document.getElementById('hex');
@@ -22,12 +21,20 @@ var iB = document.getElementById('rgb_b');
 var iH = document.getElementById('hsv_h');
 var iS = document.getElementById('hsv_s');
 var iV = document.getElementById('hsv_v');
+var bR = document.getElementById('bbyln_r')
+var bG = document.getElementById('bbyln_g')
+var bB = document.getElementById('bbyln_b')
 
 var rgbCSS = document.getElementById('rgb_css');
 var hsvCSS = document.getElementById('hsv_css');
 
 var color = document.getElementById('color');
 var textColor = document.getElementById('text-color');
+
+function divideBy255 (value) {
+    var newValue = value / 255;
+    return newvalue;
+} 
 
 function updateInputs(hex) {
 
@@ -43,6 +50,10 @@ function updateInputs(hex) {
     iH.value = hsv.h.toFixed(2);
     iS.value = hsv.s.toFixed(2);
     iV.value = hsv.v.toFixed(2);
+    
+    bR = divideBy255(iR.value);   //added
+    bG = divideBy255(iG.value);   //added
+    bB = divideBy255(iB.value);   //added
 
     rgbCSS.innerHTML = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
     hsvCSS.innerHTML = 'hsv(' + hsv.h.toFixed(2) + ', ' + hsv.s.toFixed(2) + ', ' + hsv.v.toFixed(2) + ')';
@@ -58,8 +69,9 @@ function updateColorPickers(hex) {
     cpFancy.setHex(hex);*/
 }
 
-
 var initialHex = '#f4329c';
+
+
 updateColorPickers(initialHex);
 
 
