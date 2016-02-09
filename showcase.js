@@ -22,9 +22,9 @@ var iB = document.getElementById('rgb_b');
 var iH = document.getElementById('hsv_h');
 var iS = document.getElementById('hsv_s');
 var iV = document.getElementById('hsv_v');
-var bR = document.getElementById('bbyln_r')
-var bG = document.getElementById('bbyln_g')
-var bB = document.getElementById('bbyln_b')
+var bR = document.getElementById('bbyln_r') //added
+var bG = document.getElementById('bbyln_g') //added
+var bB = document.getElementById('bbyln_b') //added
 
 var rgbCSS = document.getElementById('rgb_css');
 var hsvCSS = document.getElementById('hsv_css');
@@ -32,8 +32,9 @@ var hsvCSS = document.getElementById('hsv_css');
 var color = document.getElementById('color');
 var textColor = document.getElementById('text-color');
 
-function divideBy255 (value) {
+function divideBy255 (value) {  //added
     var newValue = value / 255;
+    newValue = newValue.toFixed(3);
     return newValue;
 } 
 
@@ -52,12 +53,12 @@ function updateInputs(hex) {
     iS.value = hsv.s.toFixed(2);
     iV.value = hsv.v.toFixed(2);
     
-    bR.value = 0.5;   //added
+    bR.value = divideby255(rgb.r);   //added
     bG.value = divideBy255(rgb.g);   //added
     bB.value = divideBy255(rgb.b);   //added
 
-    rgbCSS.innerHTML = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
-    hsvCSS.innerHTML = 'hsv(' + hsv.h.toFixed(2) + ', ' + hsv.s.toFixed(2) + ', ' + hsv.v.toFixed(2) + ')';
+    //rgbCSS.innerHTML = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
+    //hsvCSS.innerHTML = 'hsv(' + hsv.h.toFixed(2) + ', ' + hsv.s.toFixed(2) + ', ' + hsv.v.toFixed(2) + ')';
     
     color.style.backgroundColor = hex;
     textColor.style.color = hex;
