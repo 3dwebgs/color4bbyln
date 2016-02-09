@@ -56,8 +56,8 @@ function updateInputs(hex) {
     bG.value = divideBy255(rgb.g);   //added
     bB.value = divideBy255(rgb.b);   //added
 
-    //rgbCSS.innerHTML = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
-    //hsvCSS.innerHTML = 'hsv(' + hsv.h.toFixed(2) + ', ' + hsv.s.toFixed(2) + ', ' + hsv.v.toFixed(2) + ')';
+    rgbCSS.innerHTML = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
+    hsvCSS.innerHTML = 'hsv(' + hsv.h.toFixed(2) + ', ' + hsv.s.toFixed(2) + ', ' + hsv.v.toFixed(2) + ')';
     
     color.style.backgroundColor = hex;
     textColor.style.color = hex;
