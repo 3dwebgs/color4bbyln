@@ -11,7 +11,7 @@ var cpFancy = ColorPicker(document.getElementById('fancy'), updateInputs);*/
 
 //i need 0-1 numbers to update picker when changed
 //add onchange or update either hex or rgb
-
+//the toFixed isn't working
 
 
 var iHex = document.getElementById('hex');
@@ -32,8 +32,9 @@ var color = document.getElementById('color');
 var textColor = document.getElementById('text-color');
 
 function divideBy255 (value) {  //added
-    var newValue = value / 255;
-    return newValue.toFixed(3);
+    var dividedValue = value / 255;
+    var fixedValue = dividedValue.toFixed(3);
+    return fixedValue;
 } 
 
 function updateInputs(hex) {
