@@ -8,10 +8,9 @@ var cpFancy = ColorPicker(document.getElementById('fancy'), updateInputs);*/
 // Inputs.
 // -------
 
-//i want rgb #s converted to 0-1 - function rgb2bbyln
-//i need 0-1 numbers converted back to 0-255, 
-//update iR,G,B - when where?
-//make it work
+
+//i need 0-1 numbers to update picker when changed
+//add onchange or update either hex or rgb
 
 
 
@@ -26,8 +25,8 @@ var bR = document.getElementById('bbyln_r') //added
 var bG = document.getElementById('bbyln_g') //added
 var bB = document.getElementById('bbyln_b') //added
 
-var rgbCSS = document.getElementById('rgb_css');
-var hsvCSS = document.getElementById('hsv_css');
+//var rgbCSS = document.getElementById('rgb_css');
+//var hsvCSS = document.getElementById('hsv_css');
 
 var color = document.getElementById('color');
 var textColor = document.getElementById('text-color');
