@@ -8,6 +8,13 @@ var cpFancy = ColorPicker(document.getElementById('fancy'), updateInputs);*/
 // Inputs.
 // -------
 
+//i want rgb #s converted to 0-1 - function rgb2bbyln
+//functions or methods? primary question is where do i put these
+//i need 0-1 numbers converted back to 0-255, -function bbyln2rgb
+//then checked against iR,iG,iB - if statement boolean expression
+//then iR/g/b updated if different - if statement block
+
+
 var iHex = document.getElementById('hex');
 var iR = document.getElementById('rgb_r');
 var iG = document.getElementById('rgb_g');
