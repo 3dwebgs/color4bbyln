@@ -31,10 +31,6 @@ var hsvCSS = document.getElementById('hsv_css');
 var color = document.getElementById('color');
 var textColor = document.getElementById('text-color');
 
-function divideBy255 (value) {  //added
-    var dividedValue = value / 255;
-    return dividedValue;
-} 
 
 function updateInputs(hex) {
 
@@ -51,7 +47,7 @@ function updateInputs(hex) {
     iS.value = hsv.s.toFixed(2);
     iV.value = hsv.v.toFixed(2);
     
-    bR.value = divideby255(rgb.r);   //added
+    bR.value = rgb.r;   //added
     //bG.value = divideBy255(rgb.g);   //added
     //bB.value = divideBy255(rgb.b);   //added
 
