@@ -33,7 +33,6 @@ var textColor = document.getElementById('text-color');
 
 function divideBy255 (value) {  //added
     var dividedValue = value / 255;
-    var fixedValue = dividedValue.toFixed(3);
     return fixedValue;
 } 
 
@@ -52,9 +51,9 @@ function updateInputs(hex) {
     iS.value = hsv.s.toFixed(2);
     iV.value = hsv.v.toFixed(2);
     
-    bR.value = divideby255(rgb.r);   //added
-    bG.value = divideBy255(rgb.g);   //added
-    bB.value = divideBy255(rgb.b);   //added
+    bR.value = divideby255(rgb.r).toFixed(3);   //added
+    bG.value = divideBy255(rgb.g).toFixed(3);   //added
+    bB.value = divideBy255(rgb.b).toFixed(3);   //added
 
     rgbCSS.innerHTML = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
     hsvCSS.innerHTML = 'hsv(' + hsv.h.toFixed(2) + ', ' + hsv.s.toFixed(2) + ', ' + hsv.v.toFixed(2) + ')';
