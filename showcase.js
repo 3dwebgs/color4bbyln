@@ -21,9 +21,9 @@ var iB = document.getElementById('rgb_b');
 var iH = document.getElementById('hsv_h');
 var iS = document.getElementById('hsv_s');
 var iV = document.getElementById('hsv_v');
-var bR = document.getElementById('bbyln_r'); //added
-var bG = document.getElementById('bbyln_g'); //added
-var bB = document.getElementById('bbyln_b'); //added
+//var bR = document.getElementById('bbyln_r'); //added
+//var bG = document.getElementById('bbyln_g'); //added
+//var bB = document.getElementById('bbyln_b'); //added
 
 var rgbCSS = document.getElementById('rgb_css');
 var hsvCSS = document.getElementById('hsv_css');
@@ -51,9 +51,9 @@ function updateInputs(hex) {
     iS.value = hsv.s.toFixed(2);
     iV.value = hsv.v.toFixed(2);
     
-    bR.value = divideby255(rgb.r);   //added
-    bG.value = divideBy255(rgb.g);   //added
-    bB.value = divideBy255(rgb.b);   //added
+    //bR.value = divideby255(rgb.r);   //added
+    //bG.value = divideBy255(rgb.g);   //added
+    //bB.value = divideBy255(rgb.b);   //added
 
     rgbCSS.innerHTML = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
     hsvCSS.innerHTML = 'hsv(' + hsv.h.toFixed(2) + ', ' + hsv.s.toFixed(2) + ', ' + hsv.v.toFixed(2) + ')';
