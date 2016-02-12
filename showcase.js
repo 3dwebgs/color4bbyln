@@ -70,7 +70,7 @@ function updateColorPickers(hex) {
     cpFancy.setHex(hex);*/
 }
 
-var initialHex = '#f4329c';
+var initialHex = '#2c4f7e';
 
 updateColorPickers(initialHex);
 
