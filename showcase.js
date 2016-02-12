@@ -48,8 +48,8 @@ function updateInputs(hex) {
     iV.value = hsv.v.toFixed(2);
     
     var bbylnR = rgb.r / 255;
-    bbylnR = bbylnR.toFixed(3);  
-    bR.value = bbylnR;
+    //bbylnR = bbylnR.toFixed(3);  
+    bR.value = bbylnR.toFixed(3);
     //bG.value = divideBy255(rgb.g);   //added
     //bB.value = divideBy255(rgb.b);   //added
 
