@@ -24,6 +24,7 @@ var iV = document.getElementById('hsv_v');
 var bR = document.getElementById('bbyln_r'); //added
 var bG = document.getElementById('bbyln_g'); //added
 var bB = document.getElementById('bbyln_b'); //added
+var background = document.body.style.backgroundColor; 
 
 //var rgbCSS = document.getElementById('rgb_css');
 //var hsvCSS = document.getElementById('hsv_css');
@@ -59,6 +60,7 @@ function updateInputs(hex) {
     
     color.style.backgroundColor = hex;
     textColor.style.color = hex;
+    document.body.style.backgroundColor = hex;
 }
 
 function updateColorPickers(hex) {
@@ -66,8 +68,6 @@ function updateColorPickers(hex) {
     cpDefault.setHex(hex);
     /*cpSmall.setHex(hex);
     cpFancy.setHex(hex);*/
-    
-    document.body.style.backgroundColor = hex;
 }
 
 var initialHex = '#f4329c';
