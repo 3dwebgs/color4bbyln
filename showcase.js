@@ -47,12 +47,12 @@ function updateInputs(hex) {
     iS.value = hsv.s.toFixed(2);
     iV.value = hsv.v.toFixed(2);
     
-    var bbylnR = rgb.r / 255;
-    bR.value = bbylnR.toFixed(3);
-    var bbylnG = rgb.g / 255;
-    bG.value = bbylnG.toFixed(3);
-    var bbylnB = rgb.b / 255;
-    bB.value = bbylnB.toFixed(3);
+    var bbylnR = rgb.r / 255;       //added
+    bR.value = bbylnR.toFixed(3);   //added
+    var bbylnG = rgb.g / 255;       //added
+    bG.value = bbylnG.toFixed(3);   //added
+    var bbylnB = rgb.b / 255;       //added
+    bB.value = bbylnB.toFixed(3);   //added
 
     //rgbCSS.innerHTML = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
     //innerHTML = 'hsv(' + hsv.h.toFixed(2) + ', ' + hsv.s.toFixed(2) + ', ' + hsv.v.toFixed(2) + ')';
