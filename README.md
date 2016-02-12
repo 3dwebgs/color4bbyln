@@ -2,10 +2,16 @@
 
 Description
 ===========
-Cloned from: [http://www.daviddurman.com/flexi-color-picker](http://www.daviddurman.com/flexi-color-picker)
 
-I customized this color picker to add fields rgb 0 - 1.0 values for use on Babylon.js color3 class. Nothing else is changed, so all other credit goes to daviddurman.com/flexi-color-picker.
+Babylon.Color3 color picker with 0-1 RGB values. [http://gson78.github.io/color4bbyln/] 
 
+This is a page I created to assist me in building webGL pages with Babylon.js. Babylon's Color3 class needs rgb values in 0 to 1, and I got tired of picking colors, dividing each value by 255 before I could include them in code. The color
+
+
+The color picker itself is cloned from: [http://www.daviddurman.com/flexi-color-picker](http://www.daviddurman.com/flexi-color-picker)
+
+
+I created a github page with one of the repo's examples, and added inputs to calculate the rgb 0 - 1.0 values to display on the page. There are minor scripting and style updates to the example, but all other credit goes to daviddurman.com/flexi-color-picker.
 
 
 License
