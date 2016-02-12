@@ -1,5 +1,5 @@
 body {
-   font-family: 'Waiting for the Sunrise', arial, serif;
+   font-family: sans-serif;
    background-color: #1a2529;
    color: black;
 }
@@ -10,14 +10,19 @@ header {
    width: 840px;
    color: lightgray;
    letter-spacing: 2px;
-   font-family: Arial;
+   font-family: sans-serif;
    text-align: center;
 }
 
 h1 span {
    color: white;
 }
+
+h1.title {
+   font: bold 2em sans-serif;
    
+}
+
 
 #container {
    width: 800px;
