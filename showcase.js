@@ -66,6 +66,8 @@ function updateColorPickers(hex) {
     cpDefault.setHex(hex);
     /*cpSmall.setHex(hex);
     cpFancy.setHex(hex);*/
+    
+    document.body.style.backgroundColor = hex;
 }
 
 var initialHex = '#f4329c';
