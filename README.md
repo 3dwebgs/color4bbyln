@@ -2,7 +2,7 @@
 
 Babylon.Color3 color picker with 0-1 RGB values.
 ===========
-
+3dwebgs.github.io/color4bbyln
 
 
 This is a page I created to assist me in building interactive webGL pages with Babylon.js. Babylon's Color3 class needs rgb values between 0 and 1, and I got tired of picking colors, dividing each value by 255 before I could include them in code. 
